@@ -3,8 +3,6 @@ const axios = require('axios')
 
 // markup
 const IndexPage = () => {
-
-
   const handleChange = (e) => {
     console.log(e)
   }
