@@ -1,5 +1,9 @@
 import * as React from "react"
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
+
 const axios = require('axios')
+
 
 // markup
 const IndexPage = () => {
@@ -35,10 +39,17 @@ const IndexPage = () => {
 
   return (
     <main>
+      <Helmet>
+        <script async
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwdzlx7XaXSD6Ghw1cYhhVAIZo4yuGDTo&libraries=places">
+        </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src={withPrefix('initScript.js')} type="text/javascript" />
+      </Helmet>
       Where are you?
       <div className="wrapper">
         <div>
-          <input id="search-bar" type="text" placeholder="Location" name="location" onChange={handleChange} />
+          <input className="autocomplete" id="autocomplete-location-new" type="text" placeholder="Location" name="location" onChange={handleChange} />
 
         </div>
         <div>
