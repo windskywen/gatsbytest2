@@ -41,7 +41,7 @@ const IndexPage = () => {
     <main>
       <Helmet>
         <script async
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwdzlx7XaXSD6Ghw1cYhhVAIZo4yuGDTo&libraries=places">
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5lpuK-uttumzvDE0GCy4nG28L-Qgknho&libraries=places">
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src={withPrefix('initScript.js')} type="text/javascript" />
