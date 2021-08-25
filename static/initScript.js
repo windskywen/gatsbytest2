@@ -1,5 +1,5 @@
 console.log("this is initScript")
-
+var places;
 var google = google || {};
 var mapObjects = {}
 InitAutocompleteSearch('#autocomplete-location-new')
