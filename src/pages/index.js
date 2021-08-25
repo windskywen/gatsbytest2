@@ -40,9 +40,7 @@ const IndexPage = () => {
   return (
     <main>
       <Helmet>
-        <script async
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5lpuK-uttumzvDE0GCy4nG28L-Qgknho&libraries=places">
-        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5lpuK-uttumzvDE0GCy4nG28L-Qgknho&libraries=places" async></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src={withPrefix('initScript.js')} type="text/javascript" />
       </Helmet>
